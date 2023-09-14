@@ -1,0 +1,36 @@
+.main {
+    position: relative;
+    margin: 165px 54px 135px 54px;
+    /*border: 2px solid rgb(163, 153, 153);
+    border-radius: 10px;
+    background: whitegrey;
+    backdrop-filter: blur(3px);
+    box-shadow: 1px 1px 5px 1px rgba(14, 12, 12, 0.637);*/
+}
+.page-top-head {
+    display: flex;
+    padding: 0px 20px 0px 20px;
+}
+.page-title {
+    width: 50%;
+    font-weight: bold;
+    font-size: 23px;
+}
+.see-more {
+    width: 50%;
+    text-align: right;
+    color: rgb(255, 0, 76);
+}
+.see-more a {
+    margin-right: 5px;
+    text-decoration: none;
+    color: rgb(255, 0, 76);
+    font-size: 13px;
+}
+.col-md-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px !important;
+}
+
+
