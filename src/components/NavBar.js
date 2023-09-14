@@ -1,7 +1,7 @@
 /*import { useState } from "react";*/
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import logo from '../images/logo-png.png';
+import logo from '../images/Logo.svg';
 import './NavBar.css';
 
 export default function NavBar() {

@@ -5,9 +5,10 @@
     text-align: center;
     font-weight: bold;
     font-size: small;
-    padding: 39px 34px 0px 34px;
+    margin-top: 45px;
+    padding: 19px 34px 0px 34px;
     width: 100%;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 .social-media a {
     margin: 12px;

@@ -28,7 +28,7 @@ function MainBody() {
     }
     />
 
-    state.map((Values) => {
+    /*state.map((Values) => {
         const {
             name,
             title,
@@ -36,7 +36,8 @@ function MainBody() {
             release_date,
             run_time
         } = Values;
-        return (
+    })*/
+    return (
             <main className="main">
                 <div className='page-top-head'>
                     <div className='page-title'>Featured Movie</div>
@@ -45,18 +46,18 @@ function MainBody() {
                 <br></br>
                 <div className='container'>
                     <div className='row'>
-                        <div class="col-md-3 mb-4" key={id}>
-                            <div class="card h-100 one" key={id} data-testid='movie-card'>
+                        <div class="col-md-3 mb-4">
+                            <div class="card h-100 one" data-testid='movie-card'>
                                 <img
                                     className="card-img-top"
                                     data-testid='movie-poster'
-                                    src={poster_path ? `${img_300}/${poster_path}` : unavailable} 
+                                    src=""
                                     alt=""
                                     width="100%"
                                 />
                                 <div class="card-body">
-                                    <h4 class="card-title" data-testid='movie-title'>{title || name}</h4>
-                                    <p class="card-text" data-testid='movie-release-date'>{release_date || run_time}</p>
+                                    <h4 class="card-title" data-testid='movie-title'></h4>
+                                    <p class="card-text" data-testid='movie-release-date'></p>
                                 </div>
                                 <div class="card-footer py-10">
                                     <a href="" class="btn btn-secondary"></a>
@@ -67,7 +68,6 @@ function MainBody() {
                 </div>
             </main>
         )
-    })
 }
 
 export default MainBody;

@@ -1,6 +1,7 @@
 .main {
     position: relative;
-    margin: 165px 54px 135px 54px;
+    margin: 165px 0px 0px 0px;
+    padding: 0px 55px 0px 55px;
     /*border: 2px solid rgb(163, 153, 153);*/
     /*border-radius: 10px;
     background: whitegrey;
