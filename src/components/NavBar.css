@@ -1,10 +1,8 @@
 nav {
     display: inline-flex;
-    margin: 0px;
     padding: 15px 75px 15px 75px !important;
-    background: black;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid black;
+    background: transparent;
+    /*border: 1px solid red;*/
 }
 .navbar-toggler {
     border: 1px solid black;
@@ -34,27 +32,51 @@ nav {
     color: black;
 }
 nav a {
-    color: black;
     text-decoration: none;
     font-weight: bold;
 }
+form {
+    color: white;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    width: 280px;
+}
+form input {
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-size: 14px;
+    border: 1px solid rgb(240, 237, 237);
+    border-radius: 6px;
+    background: transparent;
+}
+form input::placeholder {
+    color: rgb(219, 215, 215);
+}
+
 .signin-hamburger {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .sign-in:hover {
     text-decoration: none;
     color: rgb(202, 146, 62);
 }
 .sign-in {
-    color: white;
     border: none;
+    color: white;
     margin-right: 10px;
     font-size: 14px;
     font-weight: bold;
-    background: black;
+    background: transparent;
     padding: 6px 11px 6px 11px;
     transition: all .3s ease-in-out;
+}
+.sign-in p {
+    color: white;
 }
 .app-advert, .nav-item {
     color: white;

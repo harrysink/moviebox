@@ -4,7 +4,7 @@ import '../App.css';
 function MovieInfoPage() {
     return (
         <div className='App'>
-            <MovieInfo/>
+            {/*<MovieInfo/>*/}
         </div>
     )
 }

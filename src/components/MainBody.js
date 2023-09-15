@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import imdb from '../images/imdb.svg';
+import tomato from '../images/tomato.svg';
 import { img_300 } from './Config';
 import { unavailable } from './Config';
 import './MainBody.css';
@@ -60,7 +62,65 @@ function MainBody() {
                                     <p class="card-text" data-testid='movie-release-date'></p>
                                 </div>
                                 <div class="card-footer py-10">
-                                    <a href="" class="btn btn-secondary"></a>
+                                    <img className='imdb' src={imdb}/>
+                                    <img className='tomato' src={tomato}/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="card h-100 one" data-testid='movie-card'>
+                                <img
+                                    className="card-img-top"
+                                    data-testid='movie-poster'
+                                    src=""
+                                    alt=""
+                                    width="100%"
+                                />
+                                <div class="card-body">
+                                    <h4 class="card-title" data-testid='movie-title'></h4>
+                                    <p class="card-text" data-testid='movie-release-date'></p>
+                                </div>
+                                <div class="card-footer py-10">
+                                    <img className='imdb' src={imdb}/>
+                                    <img className='tomato' src={tomato}/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="card h-100 one" data-testid='movie-card'>
+                                <img
+                                    className="card-img-top"
+                                    data-testid='movie-poster'
+                                    src=""
+                                    alt=""
+                                    width="100%"
+                                />
+                                <div class="card-body">
+                                    <h4 class="card-title" data-testid='movie-title'></h4>
+                                    <p class="card-text" data-testid='movie-release-date'></p>
+                                </div>
+                                <div class="card-footer py-10">
+                                    <img className='imdb' src={imdb}/>
+                                    <img className='tomato' src={tomato}/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="card h-100 one" data-testid='movie-card'>
+                                <img
+                                    className="card-img-top"
+                                    data-testid='movie-poster'
+                                    src=""
+                                    alt=""
+                                    width="100%"
+                                />
+                                <div class="card-body">
+                                    <h4 class="card-title" data-testid='movie-title'></h4>
+                                    <p class="card-text" data-testid='movie-release-date'></p>
+                                </div>
+                                <div class="card-footer py-10">
+                                    <img className='imdb' src={imdb}/>
+                                    <img className='tomato' src={tomato}/>
                                 </div>
                             </div>
                         </div>
