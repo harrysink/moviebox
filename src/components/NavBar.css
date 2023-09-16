@@ -1,7 +1,7 @@
 nav {
     display: inline-flex;
     padding: 15px 75px 15px 75px !important;
-    background: transparent;
+    background: black;
     /*border: 1px solid red;*/
 }
 .navbar-toggler {

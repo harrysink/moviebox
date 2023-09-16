@@ -1,25 +1,49 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { } from '@fortawesome/free-solid-svg-icons';
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import './MovieInfo.css' 
 
 function MovieInfo() {
+    const [state, setState] = useState([]);
+
+    const {id} = useParams() 
+
+
+    useEffect(() => {
+        fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=81abdeca72c4348650a82c23e715870e&language=en-US`)
+        .then(res => res.json())
+        .then(data => setState(data))
+    }, [])
+
     return (
-        <main>
-            <div className='image-hero'>
-                <img src='' alt=''/>
+        <main>===
+            <div className='video-hero'>
+                <img src={`https://image.tmdb.org/t/p/w500${state.backdrop_path}`}/>
+            </div>
+            <div className='movie-info'>
+                {state.title}
             </div>
             <div className='lower-half'>
                 <div className='movie-summary'>
-                    <p className='summary'>yswyvvdvqgvcgvgqhe</p>
-                    <p className='director'>Director: </p>
-                    <p className='writers'>Writers: </p>
-                    <p className='stars'>Stars: </p>
-                    <p><span>Top rated movie #65</span> Awards 9 nominations</p>
+                    <p className='overview'>{state.overview}</p>
+                    <p className='writers'>Release date: {state.release_date} </p>
+                    <p className='director'>Runtime: {state.runtime}mins</p>
+                    <p className='stars'>Rating: {state.vote_average}/10</p>
+                    <div className='movie-credits'>
+                        <span className='top-rated'>Top rated movie #65</span>
+                        <select className='awards'name="delivery-time" id="delivery-time">
+                            <option value="d1">Awards 9 nominations</option>
+                            <option value="d2">Awards 10 nominations</option>
+                            <option value="d3">Awards 11 nominations</option>
+                        </select>
+                    </div>
                 </div>
                 <div className='movie-option'>
-                    <div>See Showtimes</div>
-                    <div>More watch options</div>
-                    <div></div>
+                    <div className='showtimes'>See Showtimes</div>
+                    <div className='watch-options'>More watch options</div>
+                    <div className=''></div>
+                    <div className='movie-rectangular-tile'></div>
                 </div>
             </div>
         </main>

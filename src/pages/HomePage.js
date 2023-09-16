@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import MainBody from '../components/MainBody';
 import Footer from '../components/Footer';
 import "../App.css";
+import MovieInfo from '../components/MovieInfo';
 
 function HomePage() {
   return (

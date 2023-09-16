@@ -6,11 +6,11 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage/>} />
-          <Route path="movieinfo" element={<MovieInfoPage/>} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/:id" element={<MovieInfoPage/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -42,12 +42,15 @@
     /*border: ;*/
     border-radius: 4px;
 }
+.card-body h6 {
+    font-weight: bold;
+}
 .card-footer {
-    padding: 10px 0px 10px 0px;
+    padding: 10px 18px 10px 18px;
 }
 .card-footer .imdb {
-    width: 22px;
-    margin-right: 84px;
+    width: 25px;
+    margin-right: 8px;
 }
 .card-footer .tomato {
     width: 11px;
