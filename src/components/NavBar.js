@@ -21,7 +21,7 @@ export default function NavBar() {
             <a className="navbar-brand" href="/">
                 <img src={logo} alt="moviebox logo"/>
             </a>
-            <form>
+            <form className='form-1'>
                 <input type='text' placeholder='What do you want to watch?'/>
                 {search}
             </form>
@@ -35,6 +35,10 @@ export default function NavBar() {
             </div>
             <div className="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul className="navbar-nav mb-auto">
+                    <form className='form-2'>
+                        <input type='text' placeholder='What do you want to find?'/>
+                        {search}
+                    </form>
                     <a href='/signup'><li className="nav-item">Sign up</li></a>
                 </ul>
             </div>
