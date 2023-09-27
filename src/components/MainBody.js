@@ -11,7 +11,7 @@ function MainBody() {
     const [state, setState] = useState([]);
 
     useEffect(() => {
-        fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=81abdeca72c4348650a82c23e715870e&language=en-US&page=1`)
+        fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=81abdeca72c4348650a82c23e715870e&language=en-US&page=1`)
             .then(res => res.json())
             .then(data => setState(data.results.slice(0, 10)))
     }, []);
