@@ -13,7 +13,7 @@ function MainBody() {
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=81abdeca72c4348650a82c23e715870e&language=en-US&page=1`)
             .then(res => res.json())
-            .then(data => setState(data.results.slice(0, 10)))
+            .then(data => setState(data.results.slice(0, 12)))
     }, []);
     const arrowIcon = <FontAwesomeIcon
                             icon={faChevronRight}
