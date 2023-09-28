@@ -22,10 +22,14 @@ main {
 .lower-half {
     display: flex;
     padding: 0px 12px 0px 12px;
+    margin-bottom: 20px;
 }
 .movie-summary {
     width: 65%;
     margin-right: 29px;
+}
+.writers span, .director span, .stars span {
+    font-weight: bold;
 }
 .movie-option {
     width: 35%;
@@ -35,12 +39,11 @@ main {
     border: 1px solid rgb(218, 214, 214);
     margin-right: 29px;
 }
-.top-rated {
+.top-rated, .stars {
     border-radius: 7px;
     padding: 7px 12px 7px 12px;
     color: white;
     background: rgb(219, 49, 78);
-    font-weight: 600;
 }
 .awards {
     border: none;
@@ -55,6 +58,7 @@ main {
     text-align: center;
     margin-bottom: 10px;
     font-weight: 600;
+    cursor: pointer;
 }
 .watch-options {
     border-radius: 7px;
@@ -65,6 +69,7 @@ main {
     text-align: center;
     font-weight: 600;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .movie-rectangular-tile {
     background-color: pink;

@@ -56,4 +56,9 @@
     width: 11px;
 }
 
-
+/*Media Query*/
+@media screen and (max-width: 795px) {
+    main {
+        padding: 0px 20px 0px 20px !important;
+    }
+}
